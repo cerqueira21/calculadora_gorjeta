@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+        <header>
+            <h1>Calculadora de gorjeta</h1>
+        </header>
+        <div class="valores">
+            <input type="number" id="valor_conta" placeholder="Digite o valor da conta">
+            <input type="number" id="valor_porcent" placeholder="de 5 a 20% digite a gorjeta">
+        </div>
+        <div class="calcula_btn">
+            <input type="button" id="btn" value="Somar" onclick="somar()">
+            <input type="button" id="limpar" value="Limpar" onclick="limpar()">
+        </div>
+
+        <table cellspacing="1">
+            <tbody>
+                <tr>
+                    <th>Valor total:
+                        <td></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Valor da gorjeta:
+                        <td id="vl_g"></td>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <script src="/exerciciogab/gorjta/gorjetas.js"></script>
+</body>
+</html>

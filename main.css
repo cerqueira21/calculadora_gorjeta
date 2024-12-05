@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+
+    background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    max-width: 400px;
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+    background: #ffffff3b;
+    border: 2px solid #ffffff30;
+
+    backdrop-filter: blur(3px);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    font-weight: 700;
+    margin: 10px;
+}
+
+.valores{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%
+}
+
+.valores input{
+    border-radius: 5%;
+    border: none;
+    padding: 5px ;
+}
+
+.valores input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.calcula_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+}
+
+.calcula_btn #btn{
+    background-color: #22ff00f1;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+.calcula_btn #limpar{
+    background-color: #ff4646ec;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+tbody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+tbody th{
+    font-size: 20px;
+    font-weight: bold;
+}
